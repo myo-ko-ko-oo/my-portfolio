@@ -1,17 +1,28 @@
-import './App.css'
-import { Avatar} from '@chakra-ui/react';
-import myImage from "../src/assets/image/my-image.jpg"
+import "./App.css";
+import Navbar from "./components/Navbar";
+import { ThemeProvider } from "./context/ThemeContex";
+import { useEffect, useState } from "react";
+import HomePage from "./view/HomePage";
 function App() {
-
-
+  const [themeMode, setThemeMode] = useState("light");
+  const darkTheme = () => {
+    setThemeMode("dark");
+  };
+  const lightTheme = () => {
+    setThemeMode("light");
+  };
+  useEffect(() => {
+    document.querySelector("html").classList.remove("dark", "light");
+    document.querySelector("html").classList.add(themeMode);
+  }, [themeMode]);
   return (
     <>
-      <div className="text-center text-blue-600 mt-5 font-semibold text-3xl">
-        <h1>My Portfoilo</h1>
-        <Avatar name='Dan Abrahmov' size='2xl'className='mt-5' src={myImage} />
-      </div>
+      <ThemeProvider value={{ themeMode, darkTheme, lightTheme }}>
+        <Navbar />
+        <HomePage />
+      </ThemeProvider>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
