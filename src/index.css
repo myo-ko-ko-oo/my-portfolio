@@ -22,10 +22,10 @@ p{
   @apply top-0 fixed z-50 flex justify-between my-auto py-5 px-3 lg:px-5 bg-gray-50 dark:text-white dark:bg-gray-900 w-full border-none
  }
  .nav-link{
-  @apply text-lg gap-6 flex cursor-pointer
+  @apply text-lg gap-5 flex cursor-pointer
  }
  .nav-items{
-  @apply hover:bg-blue-300 dark:hover:bg-green-400 text-gray-600 dark:text-white hover:ease-in-out px-3 py-1 rounded-md font-bold
+  @apply hover:bg-blue-300 dark:hover:bg-rose-400 text-gray-600 dark:text-white hover:ease-in-out px-3 py-1 rounded-md font-bold
  }
 
  .profile-image{
@@ -35,6 +35,6 @@ p{
   @apply px-5 py-2 rounded-md bg-blue-600 text-white hover:bg-blue-700 dark:border-rose-500 dark:bg-rose-500 dark:hover:bg-rose-600
  }
  .btn-outline{
-  @apply ms-5 px-5 py-2 rounded-md border-blue-600 border-2 hover:bg-blue-600 hover:text-white dark:hover:bg-rose-500 dark:border-rose-500
+  @apply ms-5 px-5 py-2 rounded-md text-gray-500 border-blue-600 border-2 hover:bg-blue-600 hover:text-white dark:text-white dark:hover:bg-rose-500 dark:border-rose-500
  }
 }
