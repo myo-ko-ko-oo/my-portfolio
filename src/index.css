@@ -19,7 +19,7 @@ p{
 /* Components set up------ */
 @layer components{
  .Navbar {
-  @apply top-0 fixed z-50 flex justify-between my-auto py-5 px-3 lg:px-5 bg-gray-50 dark:text-white dark:bg-gray-900 w-full border-none
+  @apply top-0 fixed z-50 flex justify-between my-auto py-5 px-3 lg:px-5 bg-gradient-to-t from-transparent  to-gray-50 to-100%  dark:text-white dark:bg-gradient-to-t dark:from-transparent  dark:to-gray-900 dark:to-100% w-full border-none 
  }
  .nav-link{
   @apply text-lg gap-5 flex cursor-pointer
